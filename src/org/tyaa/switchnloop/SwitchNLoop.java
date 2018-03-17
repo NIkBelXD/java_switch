@@ -45,6 +45,11 @@ public class SwitchNLoop {
         Scanner sc = new Scanner(System.in);
         int number = sc.nextInt();
         
+        if (number <= 0){
+        
+            System.out.println("Неверное число!");    
+        } else{
+        
         //2. Проверяем введенное число
         int number10 = number % 10;
         int number100 = number % 100;
@@ -90,10 +95,11 @@ public class SwitchNLoop {
                 case 9:{
                     System.out.println("ворон");
                 }
-                default:{
+                /*default:{
                 
                     System.out.println("Неверное число!");
-                }
+                } */          
+                 }
             }
         }
         
